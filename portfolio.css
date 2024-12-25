@@ -48,7 +48,7 @@ nav {
     border-radius: 50px;
     cursor: pointer;
     background-color:transparent;
-    border: 2px solid #f9004d ;
+    border: 1.5px solid #f9004d ;
     transition: 0.5s ease-out;
 
     
@@ -57,7 +57,7 @@ nav {
     background-color: #f9004d;
     transition: 0.5s ease-in-out;
     box-shadow: 2px 5px 3px 1px rgb(8, 8, 8) ;
-    scale: 1.05;
+    scale: 1.06;
   }
   nav a {
     text-decoration: none;
