@@ -48,6 +48,7 @@ nav {
     border-radius: 50px;
     cursor: pointer;
     background-color:transparent;
+    border: 2px solid #f9004d ;
     transition: 0.5s ease-out;
 
     
