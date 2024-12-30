@@ -47,22 +47,59 @@ nav {
     text-align: center;
     border-radius: 50px;
     cursor: pointer;
-    background-color:transparent;
+    /* background-color:transparent;
     border: 1.5px solid #f9004d ;
-    transition: 0.5s ease-out;
+    transition: 0.5s ease-out; */
 
     
   }
-  nav ul li:hover{
+  /* nav ul li:hover{
     background-color: #f9004d;
     transition: 0.5s ease-in-out;
     box-shadow: 2px 5px 3px 1px rgb(8, 8, 8) ;
     scale: 1.06;
-  }
+  } */
   nav a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+  }
+  .hero{
+  
+    height: 100vh;
+    width: 100%;
+    background-image: url(./kniz\ bg\ pic.jpg);
+    
+    /* opacity: 80%; */
+  
+    background-size:cover ;
+    background-position: center;
+   background-repeat: no-repeat;
+  }
+  li{
+    position: relative;
+  }
+ li::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    /* height: 30px;
+    width:70px; */
+    /* background: #f9004d; */
+    border: 2px solid #f9004d;
+    border-radius:  50px ;
+    transform: scaleX(0); 
+    transition: transform 0.5s ease;
+    /* z-index:-1; */
+    transform-origin: left;
+
+  }
+  li:hover::before{
+    transform: scaleX(1);
+    transform-origin: right;
   }
 
 *{
@@ -77,16 +114,7 @@ body{
   padding: 0;
 } */
 
-.hero{
-  height: 100vh;
-  width: 100%;
-  background-image: url(./kniz\ bg\ pic.jpg);
-  /* opacity: 80%; */
 
-  background-size:cover ;
-  background-position: center;
- background-repeat: no-repeat;
-}
 .about-text h5{
   text-decoration: underline;
 }
@@ -236,6 +264,7 @@ button:hover{
  position: relative;
  overflow: hidden;
  text-align: center;
+ 
 }
 .card:hover{
   scale: 1.1;
@@ -397,7 +426,7 @@ footer p:nth-child(2){
   right: -5px;
   bottom: -5px;
   left: -5px;
-  border: 8px dashed  #f9004d;
+  border: 8px dashed  #eeeeee;
   border-radius: 50%;  
   animation: rotate 30s linear infinite;
 
